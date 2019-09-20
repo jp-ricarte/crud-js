@@ -1,0 +1,87 @@
+html{
+    background-color: #3ab6a8
+}
+input#botao{
+    margin-top: 5px;
+    padding: 11.5px;
+    background-color:darkblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.4px;
+    border-radius: 3px;
+}
+
+input#desenvolvedor, input#projeto, input#valor, input#stack, input#dias{
+    padding: 16px 9px 14px 9px;
+    width: 100%;
+    margin: 8px 0 8px 0;
+    border-radius: 4px;
+    border: none;
+    background-color: #ffff;
+
+}
+
+
+label{
+   font-weight: 700;
+   font-family: Arial, Helvetica, sans-serif;
+   
+}
+table{
+    margin-top: 20px;
+    width: 60%;
+    border-collapse: collapse;
+    margin-left: 30px;
+    
+
+}
+
+
+
+td, th{
+    border: 1px solid #dadada;
+    text-align: left;
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    
+}
+
+#tabela{
+    width: 100%;
+    background-color: #dadada;
+    
+}
+
+button#botao-del{
+    margin-top: 5px;
+    padding: 11.5px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.4px;
+    border-radius: 3px;
+}
+button#botao-edit{
+    margin-top: 5px;
+    padding: 11.5px;
+    background-color: #fac03b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.4px;
+    border-radius: 3px;
+}
+
+
+div.box{
+    
+    box-sizing: border-box;
+    width: 40%;
+    float: left;
+   
+}
+
+
