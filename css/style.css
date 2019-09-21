@@ -1,6 +1,20 @@
+.menu{
+    background-color: #0c3177;
+    width: 101.29%;
+    height: 79px;
+    margin: -8px;
+}
+
+.logo{
+    width: 155px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 8px;
+}
 html{
     background-color: #3ab6a8
 }
+
 input#botao-add{
     margin-top: 5px;
     padding: 11.5px;
@@ -83,7 +97,7 @@ button#botao-edit, #edit-confirm{
 }
 
 div.box{
-    
+    margin-top: 30px;
     box-sizing: border-box;
     width: 40%;
     float: left;
