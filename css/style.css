@@ -1,7 +1,7 @@
 html{
     background-color: #3ab6a8
 }
-input#botao{
+input#botao-add{
     margin-top: 5px;
     padding: 11.5px;
     background-color:darkblue;
@@ -10,6 +10,7 @@ input#botao{
     cursor: pointer;
     letter-spacing: 0.4px;
     border-radius: 3px;
+    font-weight: 700;
 }
 
 input#desenvolvedor, input#projeto, input#valor, input#stack, input#dias{
@@ -63,8 +64,9 @@ button#botao-del{
     cursor: pointer;
     letter-spacing: 0.4px;
     border-radius: 3px;
+    font-weight: 700;
 }
-button#botao-edit{
+button#botao-edit, #edit-confirm{
     margin-top: 5px;
     padding: 11.5px;
     background-color: #fac03b;
@@ -73,8 +75,12 @@ button#botao-edit{
     cursor: pointer;
     letter-spacing: 0.4px;
     border-radius: 3px;
+    font-weight: 700;
 }
 
+#edit-confirm{
+    visibility: hidden;
+}
 
 div.box{
     
