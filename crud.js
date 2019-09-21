@@ -16,8 +16,8 @@ function adicionar(){
     c.innerHTML = document.getElementById("valor").value;
     d.innerHTML = document.getElementById("stack").value;
     e.innerHTML = document.getElementById("dias").value;
-    edit.innerHTML = '<button onclick="editar(this)" id="botao-edit">EDITAR</button>';
-    del.innerHTML = '<button onclick="deletar(this)" id="botao-del">DELETAR</button>';
+    edit.innerHTML = '<button onclick="editar(this)" id="botao-edit"><i class="fa fa-edit"></i> EDITAR</button>';
+    del.innerHTML = '<button onclick="deletar(this)" id="botao-del"><i class="fa fa-trash"></i> DELETAR</button>';
     
     document.getElementById("desenvolvedor").value = '';
     document.getElementById("projeto").value = '';
@@ -29,10 +29,13 @@ function adicionar(){
 }
 
 function deletar(td){
+    if(confirm("Você tem certeza que quer deletar?")){
+
     selectedRow = td.parentElement.parentElement; //sobe uma <div> a cada parent element 
     var table = document.getElementById("tabela");   
     table.deleteRow(selectedRow.rowIndex);
     
+    }
 }
 
 function editar(td){

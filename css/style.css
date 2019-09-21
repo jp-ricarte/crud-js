@@ -28,6 +28,7 @@ input#botao-add{
 }
 
 input#desenvolvedor, input#projeto, input#valor, input#stack, input#dias{
+    
     padding: 16px 9px 14px 9px;
     width: 100%;
     margin: 8px 0 8px 0;
@@ -103,5 +104,4 @@ div.box{
     float: left;
    
 }
-
 
