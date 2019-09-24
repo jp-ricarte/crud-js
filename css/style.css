@@ -69,6 +69,11 @@ td, th{
     background-color: #dadada;
     
 }
+#tabela2{
+    width: 100%;
+    background-color: #dadada;
+    
+}
 
 button#botao-del{
     margin-top: 5px;
@@ -83,14 +88,15 @@ button#botao-del{
 }
 button#botao-edit, #edit-confirm{
     margin-top: 5px;
-    padding: 11.5px;
-    background-color: #fac03b;
+    padding: 11.5px; 
+    background-color: #e8a406;
     color: white;
     border: none;
     cursor: pointer;
     letter-spacing: 0.4px;
     border-radius: 3px;
     font-weight: 700;
+    font-size: 13.5px;
 }
 
 #edit-confirm{
@@ -105,3 +111,12 @@ div.box{
    
 }
 
+i.fa.fa-edit::before, i.fa.fa-trash::before{
+    margin-right: 4px;
+}
+
+#botao-edit, #botao-del{
+
+display: flex;
+
+}

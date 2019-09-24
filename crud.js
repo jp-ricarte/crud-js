@@ -1,8 +1,8 @@
-
 function adicionar(){
-    var table = document.getElementById("tabela");   
+    var table = document.getElementById("tabela");  
+   
     var row = table.insertRow();
-    
+  
     var a = row.insertCell();
     var b = row.insertCell();
     var c = row.insertCell();
@@ -10,14 +10,14 @@ function adicionar(){
     var e = row.insertCell();
     var edit = row.insertCell();
     var del = row.insertCell();
-  
+
     a.innerHTML = document.getElementById("desenvolvedor").value;
     b.innerHTML = document.getElementById("projeto").value;
     c.innerHTML = document.getElementById("valor").value;
     d.innerHTML = document.getElementById("stack").value;
     e.innerHTML = document.getElementById("dias").value;
-    edit.innerHTML = '<button onclick="editar(this)" id="botao-edit"><i class="fa fa-edit"></i> EDITAR</button>';
-    del.innerHTML = '<button onclick="deletar(this)" id="botao-del"><i class="fa fa-trash"></i> DELETAR</button>';
+    edit.innerHTML = '<button onclick="editar(this)" id="botao-edit"><i class="fa fa-edit"></i>EDITAR</button>';
+    del.innerHTML = '<button onclick="deletar(this)" id="botao-del"><i class="fa fa-trash"></i>DELETAR</button>';
     
     document.getElementById("desenvolvedor").value = '';
     document.getElementById("projeto").value = '';
@@ -25,19 +25,21 @@ function adicionar(){
     document.getElementById("stack").value = '';
     document.getElementById("dias").value = '';
 
+    soma();
+
     event.preventDefault();
 }
 
 function deletar(td){
     if(confirm("Você tem certeza que quer deletar?")){
-
-    selectedRow = td.parentElement.parentElement; //sobe uma <div> a cada parent element 
-    var table = document.getElementById("tabela");   
-    table.deleteRow(selectedRow.rowIndex);
-    
+        selectedRow = td.parentElement.parentElement; //sobe uma <div> a cada parent element 
+        var table = document.getElementById("tabela");   
+        table.deleteRow(selectedRow.rowIndex);
+        var td2 = document.getElementById("result-projetos");
+        td2.innerHTML =  table.rows.length-2;
     }
 }
-
+ 
 function editar(td){
     
     selectedRow = td.parentElement.parentElement;
@@ -49,6 +51,7 @@ function editar(td){
     document.getElementById("dias").value = selectedRow.cells[4].innerHTML;
     
     document.getElementById("edit-confirm").style.visibility = 'visible'
+    document.getElementById("botao-add").style.visibility = 'hidden'
 
 }
 function editconfirm(){  
@@ -60,6 +63,7 @@ function editconfirm(){
     selectedRow.cells[4].innerHTML = document.getElementById("dias").value;
     
     document.getElementById("edit-confirm").style.visibility = 'hidden'
+    document.getElementById("botao-add").style.visibility = 'visible'
 
     document.getElementById("desenvolvedor").value = '';
     document.getElementById("projeto").value = '';
@@ -67,7 +71,26 @@ function editconfirm(){
     document.getElementById("stack").value = '';
     document.getElementById("dias").value = '';
 
-    event.preventDefault();
-  
+    soma();
 
+    event.preventDefault();
 }
+
+function soma() {
+
+    var result = 0;
+    
+    var table = document.getElementById("tabela");
+    
+    var td = document.getElementById("result-valores");
+    var td2 = document.getElementById("result-projetos");
+
+   for (i = 2; i < table.rows.length; i++) {
+        result += parseInt(table.rows[i].cells[2].innerHTML);
+      
+    }
+    
+    td.innerHTML = "R$ " + result ; 
+    td2.innerHTML =  table.rows.length-2;
+}
+
