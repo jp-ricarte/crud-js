@@ -1,24 +1,24 @@
-.menu{
+.menu {
     background-color: #0c3177;
-    width: 101.29%;
     height: 79px;
     margin: -8px;
 }
 
-.logo{
+.logo {
     width: 155px;
     height: 60px;
     margin-left: 20px;
     margin-top: 8px;
 }
-html{
+
+html {
     background-color: #3ab6a8
 }
 
-input#botao-add{
+input#botao-add {
     margin-top: 5px;
     padding: 11.5px;
-    background-color:darkblue;
+    background-color: darkblue;
     color: white;
     border: none;
     cursor: pointer;
@@ -27,8 +27,12 @@ input#botao-add{
     font-weight: 700;
 }
 
-input#desenvolvedor, input#projeto, input#valor, input#stack, input#dias{
-    
+input#desenvolvedor,
+input#projeto,
+input#valor,
+input#stack,
+input#dias {
+
     padding: 16px 9px 14px 9px;
     width: 100%;
     margin: 8px 0 8px 0;
@@ -39,43 +43,46 @@ input#desenvolvedor, input#projeto, input#valor, input#stack, input#dias{
 }
 
 
-label{
-   font-weight: 700;
-   font-family: Arial, Helvetica, sans-serif;
-   
+label {
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
-table{
+
+table {
     margin-top: 20px;
     width: 60%;
     border-collapse: collapse;
     margin-left: 30px;
-    
+
 
 }
 
 
 
-td, th{
+td,
+th {
     border: 1px solid #dadada;
     text-align: left;
     padding: 8px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-    
+
 }
 
-#tabela{
+#tabela {
     width: 100%;
     background-color: #dadada;
-    
-}
-#tabela2{
-    width: 100%;
-    background-color: #dadada;
-    
+
 }
 
-button#botao-del{
+#tabela2 {
+    width: 100%;
+    background-color: #dadada;
+
+}
+
+button#botao-del {
     margin-top: 5px;
     padding: 11.5px;
     background-color: red;
@@ -86,9 +93,11 @@ button#botao-del{
     border-radius: 3px;
     font-weight: 700;
 }
-button#botao-edit, #edit-confirm{
+
+button#botao-edit,
+#edit-confirm {
     margin-top: 5px;
-    padding: 11.5px; 
+    padding: 11.5px;
     background-color: #e8a406;
     color: white;
     border: none;
@@ -99,24 +108,35 @@ button#botao-edit, #edit-confirm{
     font-size: 13.5px;
 }
 
-#edit-confirm{
+#edit-confirm {
     visibility: hidden;
 }
 
-div.box{
+div.box {
     margin-top: 30px;
     box-sizing: border-box;
     width: 40%;
     float: left;
-   
+
 }
 
-i.fa.fa-edit::before, i.fa.fa-trash::before{
+i.fa.fa-edit::before,
+i.fa.fa-trash::before {
     margin-right: 4px;
 }
 
-#botao-edit, #botao-del{
+#botao-edit,
+#botao-del {
 
-display: flex;
+    display: flex;
 
+}
+
+#valid0,
+#valid1,
+#valid2,
+#valid3,
+#valid4 {
+    color: #e82525;
+    font-size: 15px;
 }

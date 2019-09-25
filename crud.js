@@ -1,6 +1,65 @@
+
 function adicionar(){
-    var table = document.getElementById("tabela");  
    
+        if(document.getElementById("desenvolvedor").value == ""){
+            document.getElementById("valid0").innerHTML = "Preencha o campo abaixo!"
+        
+         event.preventDefault()  
+         return;  
+        }
+        else{
+            document.getElementById("valid0").innerHTML = ""
+         
+        }
+       
+        if(document.getElementById("projeto").value == ""){
+            document.getElementById("valid1").innerHTML = "Preencha o campo abaixo!"
+            
+         event.preventDefault()
+         return
+        }
+        else{
+            document.getElementById("valid1").innerHTML = ""
+          
+        }
+
+        if(document.getElementById("valor").value == ""){
+            document.getElementById("valid2").innerHTML = "Preencha o campo abaixo!"
+            
+         event.preventDefault()  
+         return
+        } 
+        else{
+            document.getElementById("valid2").innerHTML = ""
+        }
+
+        if(document.getElementById("stack").value == ""){
+            document.getElementById("valid3").innerHTML = "Preencha o campo abaixo!"
+            
+         event.preventDefault()  
+         return
+        }
+         else{
+            document.getElementById("valid3").innerHTML = ""
+         }
+        
+        if(document.getElementById("dias").value == ""){
+            document.getElementById("valid4").innerHTML = "Preencha o campo abaixo!"
+            
+         event.preventDefault() 
+         return
+        }
+        else{
+            document.getElementById("valid4").innerHTML = ""
+        }
+
+      
+        document.getElementById("valid1").innerHTML = ""
+        document.getElementById("valid2").innerHTML = ""
+        document.getElementById("valid3").innerHTML = ""
+        document.getElementById("valid4").innerHTML = ""
+
+    var table = document.getElementById("tabela");  
     var row = table.insertRow();
   
     var a = row.insertCell();
@@ -32,9 +91,11 @@ function adicionar(){
 
 function deletar(td){
     if(confirm("Você tem certeza que quer deletar?")){
-        selectedRow = td.parentElement.parentElement; //sobe uma <div> a cada parent element 
+
+        selectedRow = td.parentElement.parentElement //sobe uma <div> a cada parent element 
         var table = document.getElementById("tabela");   
         table.deleteRow(selectedRow.rowIndex);
+
         var td2 = document.getElementById("result-projetos");
         td2.innerHTML =  table.rows.length-2;
     }

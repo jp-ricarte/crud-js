@@ -1,91 +1,98 @@
 <html>
-        <link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel='stylesheet' type='text/css' media='screen' href='./css/style.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <div class="menu">
     <img src="./css/logoWhite.png" class="logo">
-</div>        
-      
-<table>
-    <form autocomplete="off">
-    <div class="box">
-<div>
-    <label for="nome">Desenvolvedor </label>
-    <br>
-    <input type="text" id="desenvolvedor">
-    
+</div>
+<form>
+    <table>
+        <form autocomplete="off">
+            <div class="box">
+
+                <div>
+                    <label for="nome">Desenvolvedor </label>
+                    <label id="valid0"></label>
+                    <br>
+                    <input type="text" id="desenvolvedor">
+
+                </div>
+
+                <div>
+
+                    <label for="nome">Projeto </label>
+                    <label id="valid1"></label>
+                    <br>
+                    <input type="text" id="projeto">
+
+                </div>
+
+                <div>
+                    <label for="nome">Valor </label>
+                    <label id="valid2"></label>
+                    <br>
+                    <input type="number" id="valor">
+
+
+                </div>
+
+                <div>
+                    <label for="nome">Stack </label>
+                    <label id="valid3"></label>
+                    <br>
+                    <input type="text" id="stack">
+
+                </div>
+
+                <div>
+                    <label for="nome">Dias úteis </label>
+                    <label id="valid4"></label>
+                    <br>
+                    <input type="number" id="dias">
+
+                </div>
+        </form>
+        <div>
+            <input type="submit" value="ADICIONAR" id="botao-add" onclick="adicionar()">
+            <button id="edit-confirm" onclick="editconfirm()">CONFIRMAR EDIÇÃO</button>
+        </div>
+
+    </table>
+</form>
 </div>
 
-<div>
-    <label for="nome">Projeto </label>
-   <br>
-    <input type="text" id="projeto">
-   
-</div>
+<div class="box">
+    <table id="tabela">
+        <thead>
 
-<div>
-    <label for="nome">Valor </label>
-    <br>
-    <input type="number" id="valor">
-    
+            <th>Desenvolvedor</th>
+            <th>Projeto</th>
+            <th>Valor</th>
+            <th>Stack</th>
+            <th>Dias úteis</th>
 
-</div>
+        </thead>
+        <tbody>
+            <tr></tr>
+        </tbody>
+    </table>
 
-<div>
-    <label for="nome">Stack </label>
-    <br>
-    <input type="text" id="stack">
+    <table id="tabela2">
+        <thead>
 
-</div>
+            <th>Total arrecadado</th>
+            <th>Total de Projetos</th>
 
-<div>
-    <label for="nome">Dias úteis </label>
-    <br>
-    <input type="number" id="dias">
+        </thead>
+        <tbody>
+            <tr></tr>
+            <tr>
+                <td id=result-valores></td>
+                <td id=result-projetos></td>
 
-</div>
-
-<div>
-    <input type="submit" value="ADICIONAR" id="botao-add" onclick="adicionar()">
-    <button  id="edit-confirm" onclick="editconfirm()">CONFIRMAR EDIÇÃO</button>
-</div>
-
-</table>
-
-</div>
-
-    <div class="box">
-<table id="tabela">
-    <thead>
-    
-        <th>Desenvolvedor</th>
-        <th>Projeto</th>
-        <th>Valor</th>
-        <th>Stack</th>
-        <th>Dias úteis</th>
-        
-    </thead>
-    <tbody>
-        <tr></tr> 
-    </tbody>
-</table>
-
-<table id="tabela2">
-    <thead>
-
-     <th>Total arrecadado</th>
-     <th>Total de Projetos</th>
-
-    </thead>
-    <tbody>
-        <tr></tr> 
-        <tr>
-            <td id=result-valores></td>
-            <td id=result-projetos></td>
-           
-        </tr>
-    </tbody>
-</table>
+            </tr>
+        </tbody>
+    </table>
 
 </div>
 </div>
