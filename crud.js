@@ -92,7 +92,6 @@ function deletar(td) {
         var td2 = document.getElementById("result-projetos");
         td2.innerHTML = table.rows.length - 2;
 
-
         var result = document.getElementById("result-valores");
         var result_meta = document.getElementById("result-meta");
 
@@ -100,10 +99,6 @@ function deletar(td) {
 
         var meta = parseFloat(result.innerHTML / 27000) * 100
         result_meta.innerHTML = parseFloat(meta.toFixed(1)) + "%"
-
-        var total = result.innerHTML;
-        total = "R$" + total
-        result.innerHTML = total
 
     }
 }
@@ -114,7 +109,7 @@ function editar(td) {
 
     document.getElementById("desenvolvedor").value = selectedRow.cells[0].innerHTML;
     document.getElementById("projeto").value = selectedRow.cells[1].innerHTML;
-    document.getElementById("valor  porcentagem.style.visibility = 'hidden'").value = selectedRow.cells[2].innerHTML;
+    document.getElementById("valor").value = selectedRow.cells[2].innerHTML;
     document.getElementById("stack").value = selectedRow.cells[3].innerHTML;
     document.getElementById("dias").value = selectedRow.cells[4].innerHTML;
 
@@ -126,7 +121,6 @@ function editar(td) {
 }
 
 function editconfirm() {
-    
 
     selectedRow.cells[0].innerHTML = document.getElementById("desenvolvedor").value;
     selectedRow.cells[1].innerHTML = document.getElementById("projeto").value;
@@ -163,7 +157,7 @@ function soma() {
 
     }
 
-    td.innerHTML = result;
+    td.innerHTML = result
 
     td2.innerHTML = table.rows.length - 2;
     var meta = (result / 27000) * 100
