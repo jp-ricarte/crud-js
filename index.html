@@ -5,60 +5,61 @@
 <div class="menu">
     <img src="./css/logoWhite.png" class="logo">
 </div>
-<form>
-    <table>
-        <form autocomplete="off">
-            <div class="box">
-
-                <div>
-                    <label for="nome">Desenvolvedor </label>
-                    <label id="valid0"></label>
-                    <br>
-                    <input type="text" id="desenvolvedor">
-
-                </div>
-
-                <div>
-
-                    <label for="nome">Projeto </label>
-                    <label id="valid1"></label>
-                    <br>
-                    <input type="text" id="projeto">
-
-                </div>
-
-                <div>
-                    <label for="nome">Valor </label>
-                    <label id="valid2"></label>
-                    <br>
-                    <input type="number" id="valor">
 
 
-                </div>
+<table>
+    <form autocomplete="off">
+        <div class="box">
 
-                <div>
-                    <label for="nome">Stack </label>
-                    <label id="valid3"></label>
-                    <br>
-                    <input type="text" id="stack">
+            <div>
+                <label for="nome">Desenvolvedor </label>
+                <label id="valid0"></label>
+                <br>
+                <input type="text" id="desenvolvedor">
 
-                </div>
+            </div>
 
-                <div>
-                    <label for="nome">Dias úteis </label>
-                    <label id="valid4"></label>
-                    <br>
-                    <input type="number" id="dias">
+            <div>
 
-                </div>
-        </form>
-        <div>
-            <input type="submit" value="ADICIONAR" id="botao-add" onclick="adicionar()">
-            <button id="edit-confirm" onclick="editconfirm()">CONFIRMAR EDIÇÃO</button>
-        </div>
+                <label for="nome">Projeto </label>
+                <label id="valid1"></label>
+                <br>
+                <input type="text" id="projeto">
 
-    </table>
-</form>
+            </div>
+
+            <div>
+                <label for="nome">Valor </label>
+                <label id="valid2"></label>
+                <br>
+                <input type="number" id="valor">
+
+
+            </div>
+
+            <div>
+                <label for="nome">Stack </label>
+                <label id="valid3"></label>
+                <br>
+                <input type="text" id="stack">
+
+            </div>
+
+            <div>
+                <label for="nome">Dias úteis </label>
+                <label id="valid4"></label>
+                <br>
+                <input type="number" id="dias">
+
+            </div>
+
+            <div>
+                <input type="submit" value="ADICIONAR" id="botao-add" onclick="adicionar()">
+                <button id="edit-confirm" onclick="editconfirm()">CONFIRMAR EDIÇÃO</button>
+            </div>
+
+</table>
+
 </div>
 
 <div class="box">
@@ -82,6 +83,7 @@
 
             <th>Total arrecadado</th>
             <th>Total de Projetos</th>
+            <th>% da meta </th>
 
         </thead>
         <tbody>
@@ -89,6 +91,8 @@
             <tr>
                 <td id=result-valores></td>
                 <td id=result-projetos></td>
+                <td id=result-meta></td>
+
 
             </tr>
         </tbody>
