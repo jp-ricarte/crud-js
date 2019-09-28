@@ -15,7 +15,7 @@ html {
     background-color: #3ab6a8
 }
 
-input#botao-add {
+#botao-add {
     margin-top: 5px;
     padding: 11.5px;
     background-color: darkblue;

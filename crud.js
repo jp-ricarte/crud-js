@@ -1,3 +1,8 @@
+document.onkeydown = function(event){
+    if(event.keyCode == 13){
+     event.preventDefault()
+    }
+}
 function adicionar() {
 
     if (document.getElementById("desenvolvedor").value == "") {
@@ -104,6 +109,12 @@ function deletar(td) {
 }
 
 function editar(td) {
+    if(event.keyCode === 13){
+       
+        editconfirm()
+        
+    }
+
 
     selectedRow = td.parentElement.parentElement;
 
