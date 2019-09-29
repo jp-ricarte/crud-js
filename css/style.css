@@ -62,7 +62,7 @@ table {
 
 td,
 th {
-    border: 1px solid #dadada;
+   
     text-align: left;
     padding: 8px;
     font-family: Arial, Helvetica, sans-serif;
@@ -73,16 +73,10 @@ td{
     padding-left: 10px;
 }
 
-#tabela {
+#tabela, #tabela2 {
     width: 100%;
     background-color: #dadada;
-
-}
-
-#tabela2 {
-    width: 100%;
-    background-color: #dadada;
-
+    border-radius: 3px;
 }
 
 button#botao-del {

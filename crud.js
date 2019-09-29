@@ -96,10 +96,15 @@ function deletar(td) {
         table.deleteRow(selectedRow.rowIndex);
 
         var td2 = document.getElementById("result-projetos");
+        var result_projetos = document.getElementById("result-meta-projetos");
+
         td2.innerHTML = table.rows.length - 2;
 
+        var metaProjetos = ((table.rows.length - 2) / 18) * 100;
+        result_projetos.innerHTML =  parseFloat(metaProjetos.toFixed(1)) + "%"
+
         var result = document.getElementById("result-valores");
-        var result_meta = document.getElementById("result-meta");
+        var result_meta = document.getElementById("result-meta-valor");
 
         result.innerHTML -= parseFloat(selectedRow.cells[2].innerHTML);
 
@@ -110,6 +115,7 @@ function deletar(td) {
 }
 
 function editar(td) {
+
 
     selectedRow = td.parentElement.parentElement;
 
@@ -156,17 +162,24 @@ function soma() {
 
     var td = document.getElementById("result-valores");
     var td2 = document.getElementById("result-projetos");
-    var td3 = document.getElementById("result-meta");
+    var td3 = document.getElementById("result-meta-valor");
+    var td4 = document.getElementById("result-meta-projetos");
 
     for (i = 2; i < table.rows.length; i++) {
-        result += parseInt(table.rows[i].cells[2].innerHTML)
+        result += parseFloat(table.rows[i].cells[2].innerHTML)
 
     }
 
     td.innerHTML = result
 
     td2.innerHTML = table.rows.length - 2;
-    var meta = (result / 27000) * 100
-    td3.innerHTML = parseFloat(meta.toFixed(1)) + "%"
+
+    var metaValor = (result / 27000) * 100
+    td3.innerHTML = parseFloat(metaValor.toFixed(1)) + "%"
+
+    var metaProjetos = ((table.rows.length - 2) / 18) * 100;
+    td4.innerHTML = parseFloat(metaProjetos.toFixed(1)) + "%"
+    
+
 
 }
