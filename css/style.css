@@ -58,22 +58,22 @@ table {
 
 }
 
-
-
 td,
 th {
-   
+
     text-align: left;
     padding: 8px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 
 }
-td{
+
+td {
     padding-left: 10px;
 }
 
-#tabela, #tabela2 {
+#tabela,
+#tabela2 {
     width: 100%;
     background-color: #dadada;
     border-radius: 3px;
@@ -106,7 +106,7 @@ button#botao-edit,
 }
 
 #edit-confirm {
-    visibility: hidden;
+    display: none;
 }
 
 div.box {
@@ -138,6 +138,6 @@ i.fa.fa-trash::before {
     font-size: 15px;
 }
 
-#result-meta{
+#result-meta {
     padding-left: 20px;
 }

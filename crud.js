@@ -125,8 +125,8 @@ function editar(td) {
     document.getElementById("stack").value = selectedRow.cells[3].innerHTML;
     document.getElementById("dias").value = selectedRow.cells[4].innerHTML;
 
-    document.getElementById("edit-confirm").style.visibility = 'visible'
-    document.getElementById("botao-add").style.visibility = 'hidden'
+    document.getElementById("edit-confirm").style.display = 'inline-block'
+    document.getElementById("botao-add").style.display = 'none'
 
     event.preventDefault();
 
@@ -140,8 +140,8 @@ function editconfirm() {
     selectedRow.cells[3].innerHTML = document.getElementById("stack").value;
     selectedRow.cells[4].innerHTML = document.getElementById("dias").value;
 
-    document.getElementById("edit-confirm").style.visibility = 'hidden'
-    document.getElementById("botao-add").style.visibility = 'visible'
+    document.getElementById("edit-confirm").style.display = 'none'
+    document.getElementById("botao-add").style.display = 'inline-block'
 
     document.getElementById("desenvolvedor").value = '';
     document.getElementById("projeto").value = '';
