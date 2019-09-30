@@ -180,6 +180,4 @@ function soma() {
     var metaProjetos = ((table.rows.length - 2) / 18) * 100;
     td4.innerHTML = parseFloat(metaProjetos.toFixed(1)) + "%"
     
-
-
 }

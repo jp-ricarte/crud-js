@@ -82,7 +82,7 @@ td{
 button#botao-del {
     margin-top: 5px;
     padding: 11.5px;
-    background-color: red;
+    background-color: #cc0000;
     color: white;
     border: none;
     cursor: pointer;
